@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
-    <title>DOM To Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>To Do</title>
 </head>
 <body>
-    <div class="page">
-        <div class="list-container">
-            <h1 id="title">To Do:</h1>
-            <p id="subtitle">Get it done today!</p>
-            <div class="input">
-                <button id="enter">Add</button> 
-                <input id="user-input" type="text" placeholder="Enter items">
-            
+        <div class="container">
+            <div id="list-container">
+                <h1 id="title">To Do:</h1>
+                <p id="subtitle">Get it done today!</p>
+                <div class="input">
+                    <input id="user-input" type="text" placeholder="Enter task">
+                </div>
+                <ul id="list">
+                    <li>
+                        <img src="img/delete.png" class="delete delete-icon" alt="delete-icon">
+                        <p class="done">Learn something new</p>
+                    </li>
+                    <li>
+                        <img src="img/delete.png" class="delete delete-icon" alt="delete-icon">
+                        <p class="done">Feed the fish</p>
+                    </li>
+                    <li>
+                        <img src="img/delete.png" class="delete delete-icon" alt="delete-icon">
+                        <p class="done">Survive the day</p>
+                    </li>
+                </ul>
             </div>
-            <ul class="list">
-                <li>
-                    <button class="delete">Delete</button>
-                    <p class="done">Learn something new</p>
-                </li>
-                <li>
-                    <button class="delete">Delete</button>
-                    <p class="done">Feed the fish</p>
-                </li>
-                <li>
-                    <button class="delete">Delete</button>
-                    <p class="done">Survive the day</p>
-                </li>
-                
-            </ul>
+            <div id="photo-container">
+                <div id="random-image"></div>
+            </div>
+            
         </div>
-
-        <div><img src="img/waiting-6.png" alt="waiting"></div>
-
-    </div>
+        <footer class="footer">
+            <p>Created by <a href="github.com">Sara</a>, 2020.</p>
+            <p>Illustrations by <a href="https://dribbble.com/Ivan_Haidutski">Ivan Haidutski</a> from <a href="https://icons8.com/">Icons8</a></p>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
